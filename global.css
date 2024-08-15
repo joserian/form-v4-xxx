@@ -1,0 +1,117 @@
+body {
+    background-color: rgb(32, 32, 32);
+    margin: 0;
+    height: 100%;
+    
+}
+
+@font-face {
+    font-family: "Marguerite";
+    src: url("fonts/marguerite.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "Gotham XLight";
+    src: url("fonts/Gotham-XLight.otf") format("opentype");
+}
+
+#area-title {
+    width: 380px;
+    margin: auto;
+}
+
+#title {
+    text-align: center;
+    user-select: none;
+    font-size: 50px;
+
+    color: white;
+    font-family: "Gotham XLight";
+    
+    span {
+        color: orange;
+        font-family: "Marguerite";
+    }
+
+}
+
+#title-form {
+    text-align: center;
+    padding-block: 35px;
+
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.area-input {
+    text-align: left;
+}
+
+.label-form {
+    font-size: 17px;
+    font-weight:bold;
+}
+
+
+.input-form {
+    background-color: black;
+    color: rgb(211, 211, 211);
+    font-size: 17px;
+    
+    padding: 12px 16px;
+    width: 270px;
+    margin-bottom: 25px;
+
+    border-radius: 6px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+
+    /*
+    transition: border-color 10s ease;
+    transition: color 0.3s ease;*/
+}
+
+.input-form:focus {
+    color: white;
+    
+    border-color: white;
+    outline: none;
+}
+
+
+
+#area-showpassword {
+    position: relative;
+    top: -20px;
+
+    input, label {
+        cursor:pointer;
+    }
+    input {
+        margin-right: 0;
+    }
+    label {
+        padding-left: 7px;
+    }
+}
+
+
+#btn-login {
+    background-color: orange;
+    width: 200px;
+
+    color: black;
+    font-size: 19px;
+    
+    padding: 12px 0px;
+    border-radius: 7px;
+    border: solid;
+
+    cursor:pointer;
+}
+
+#btn-login:hover {
+    background-color: rgb(209, 136, 0);
+}

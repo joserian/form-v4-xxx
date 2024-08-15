@@ -1,0 +1,68 @@
+body {
+    position: relative;
+    overflow: auto;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-image: url("photos/9958650-miakhalifa03_880x660.jpg"), url("photos/9958383-teensloveblackcocks-mia-khalifa-001_880x660.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left, right;
+    z-index: -1;
+}
+
+@media (max-width:1000px) {
+    body::before {
+        width: 100%;
+        background-size: cover;
+        /*background-image: url("photos/9958650-miakhalifa03_880x660.jpg");*/
+        background-position: left center, left center;   
+        
+    }
+}
+
+#content {
+    padding-top: 30px;
+}
+
+#create-content {
+    margin: auto;
+    background-color:black;
+    width: 380px;
+    height: auto;
+    border-radius: 4%;
+
+    color: white;
+    font-family: Arial;
+
+    box-shadow: 0px 5px 10px black;
+}
+
+#create-form {
+    /* id do formulario*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#other {   
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#haveaccount {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#haveaccount:hover {
+    text-decoration: underline;
+}

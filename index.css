@@ -1,0 +1,89 @@
+body {
+    position: relative;
+    overflow: auto;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("photos/lana-rhoades1.jpg");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    filter: grayscale(100%) brightness(50%);
+    z-index: -1; 
+}
+
+#content {
+    padding-top: 30px;
+}
+
+
+
+#login-content {
+    margin: auto;
+    
+    background-color: black;
+    width: 380px;
+    height: auto;
+
+    color: white;
+    font-family: Arial;
+
+    white-space: nowrap;
+
+    border-radius: 4%;
+    box-shadow: 0px 5px 10px black;
+
+}
+
+#login-form {
+    /* id do formulario*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#other {
+    padding-block: 20px;
+}
+
+#forgotpassword {
+    text-align: center;
+    padding-block: 10px;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration:underline;
+    }
+}
+
+
+#createaccount {
+    text-align: center;
+
+}
+
+#btn-create {
+    width: 150px;
+
+    font-size: 15px;
+    font-weight: bold;
+    
+    padding: 10px 0px;
+    border-radius: 7px;
+    border: solid;
+
+    cursor: pointer;
+}
+
+#btn-create:hover {
+    background-color: rgb(194, 194, 194);
+}
